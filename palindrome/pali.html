@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<title>palindro</title>
+ 
+
+</head>
+
+<BODY>
+ <script>
+window.onload=function(){
+var palabrainversa = "";
+var normal = "";
+var inversa = "";
+
+var palabra = prompt("Introduce  un palindrome ");
+
+palabra = palabra.toLowerCase();
+palabrauno = palabra;
+
+
+  for(var i = 0; i < palabra.length ; i++)
+ 		{var palabraAzqui = palabra.charCodeAt(i);
+               
+                 console.log("sus letras en orden :   "+palabra+" "+palabraAzqui);
+                 normal += palabraAzqui;
+  
+                }
+        
+  for(var i = palabrauno.length -1 ; i >= 0 ; i--)
+ 		{var InverAzqui = palabrauno.charCodeAt(i);
+                
+                 console.log("sus letras inversas :   "+palabrauno+" "+InverAzqui);
+                
+                 inversa +=InverAzqui;
+                }
+
+
+console.log("imprime orden    "+normal);
+console.log("imprime desorden "+inversa);
+var num;
+ 
+ for(var i in normal) {
+    if(normal[i] == inversa[i]) {
+        num=1;
+       
+    }
+      else {
+             num=0;
+           
+    }
+  }
+
+   if(num == 1) {
+       
+        alert(palabra+"  si es un palindrome");
+    }
+      else {
+            
+           alert(palabra+"  no es un palindrome");
+ 
+  }
+ };
+</script>
+
+<h1>Ejemplos: </h1>
+<img src = "imagen.jpg"/>
+</body>
+</html>
