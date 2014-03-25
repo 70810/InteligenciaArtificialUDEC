@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<title>Contador de vocales</title>
+ 
+
+</head>
+
+<BODY>
+ <script>
+window.onload=function(){
+
+
+var count =0;
+var counta =0;
+var counte =0;
+var counti =0;
+var counto =0;
+var countu =0;
+var pala ="";
+var palabra = prompt("Introduce  una palabra ");
+
+palabra = palabra.toLowerCase();
+
+  for(var i = 0; i < palabra.length ; i++){
+ 	         
+               switch (palabra.charAt(i)) { 
+                            case 'a':   counta++; 
+                                        break;
+                            case 'e':   counte++;                                         
+                                        break; 
+                            case 'i':   counti++; 
+                                        break; 
+                            case 'o':   counto++;                                         
+                                        break; 
+                            case 'u':   countu++; 
+                                        break; 
+                  }
+
+                                      
+      }
+
+document.write("<br />");
+document.write("<br />");
+document.write("tiene "+counta+" a."+"<br />");
+document.write("tiene "+counte+" e."+"<br />");
+document.write("tiene "+counti+" i."+"<br />");
+document.write("tiene "+counto+" o."+"<br />");
+document.write("tiene "+countu+" u."+"<br />");
+ count=counta+counte+counti+counto+countu;
+
+alert(palabra+"  tiene "+count+" vocales");                        
+   
+ 
+ };
+</script>
+
+<h1>Vocales: </h1>
+
+</body>
+</html>
